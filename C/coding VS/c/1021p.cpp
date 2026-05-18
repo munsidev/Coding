@@ -1,0 +1,44 @@
+#include<stdio.h>
+int main(){
+    float x;
+    scanf("%f",&x);
+    int n;
+    printf("NOTAS:\n");
+    n=x/100;
+    printf("%d nota(s) de R$ 100.00\n",n);
+    x=x-(100*n);
+    n=x/50;
+    printf("%d nota(s) de R$ 50.00\n",n);
+    x=x-(50*n);
+    n=x/20;
+    printf("%d nota(s) de R$ 20.00\n",n);
+    x=x-(20*n);
+    n=x/10;
+    printf("%d nota(s) de R$ 10.00\n",n);
+    x=x-(10*n);
+    n=x/5;
+    printf("%d nota(s) de R$ 5.00\n",n);
+    x=x-(5*n);
+    n=x/2;
+    printf("%d nota(s) de R$ 2.00\n",n);
+    x=x-(2*n);
+    printf("MOEDAS:\n");
+    n=x/1;
+    printf("%d moeda(s) de R$ 1.00\n",n);
+    x=x-(1*n);
+    n=x/0.50;
+    printf("%d moeda(s) de R$ 0.50\n",n);
+    x=x-(0.50*n);
+    n=x/0.25;
+    printf("%d moeda(s) de R$ 0.25\n",n);
+    x=x-(0.25*n);
+    n=x/0.10;
+    printf("%d moeda(s) de R$ 0.10\n",n);
+    x=x-(0.10*n);
+    n=x/0.05;
+    printf("%d moeda(s) de R$ 0.05\n",n);
+    x=x-(0.05*n); printf("\n%f",x);
+    n=x/0.01;
+    printf("%d moeda(s) de R$ 0.01\n",n);
+    return 0;
+}
